@@ -3,6 +3,8 @@
 
 use App\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;
+use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Process\Process;
 
 if (!is_file(dirname(__DIR__).'/vendor/autoload_runtime.php')) {
     throw new LogicException('Symfony Runtime is missing. Try running "composer require symfony/runtime".');
